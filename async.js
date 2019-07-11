@@ -1,12 +1,14 @@
 "use module"
-export async function* AsyncRange( a, b){
+import range from "."
+
+export async function* RangeAsync( a, b){
 	return yield* range( a, b)
 }
 
 export {
-  AsyncRange as default,
-  AsyncRange as asyncRange,
-  AsyncRange as Range,
-  AsyncRange as Async,
-  AsyncRange as async,
+  RangeAsync as default,
+  RangeAsync as rangeAsync,
+  RangeAsync as Range,
+  RangeAsync as Async,
+  RangeAsync as async,
 }
